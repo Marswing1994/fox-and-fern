@@ -39,7 +39,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   // Save order locally BEFORE redirecting
   localStorage.setItem("order", JSON.stringify({ cart, form }));
 
-  const response = await fetch("http://localhost:4242/create-checkout-session", {
+  const response = await fetch("https://fox-and-fern.onrender.com/create-checkout-session", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
