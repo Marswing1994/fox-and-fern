@@ -34,8 +34,8 @@ app.post("/create-checkout-session", async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/cart",
+      success_url: "https://fox-and-fern-l3hp6gdby-marissa-swings-projects.vercel.app/success",
+      cancel_url: "https://fox-and-fern-l3hp6gdby-marissa-swings-projects.vercel.app/cart",
     });
 
     res.json({ url: session.url });
